@@ -1,4 +1,5 @@
 # uniapp2wxpack  
+### [访问源码仓库](https://github.com/devilwjp/uniapp2wxpack)  
 ## Uni-App的小程序解耦构建(支持微信、头条)  
 ### 可以将uni-app项目输出给任何原生小程序项目作为目录、作为分包、甚至做极端的项目混合
 ### 可以直接在uni-app项目中引入原生小程序项目、页面、模块、任何资源（wxss、js、wxml、json、wxs、ttss、ttml等），完全不需要修改原生小程序的代码  
