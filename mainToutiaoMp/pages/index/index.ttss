@@ -1,0 +1,5 @@
+@import '/test1.ttss';
+.intro {
+  margin: 30px;
+  text-align: center;
+}

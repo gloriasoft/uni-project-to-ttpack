@@ -1,0 +1,30 @@
+{
+	//	indexPage配置后，会提升为整个小程序项目的首页
+	"indexPage":"",
+	"pages": [
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "测试"
+			}
+		}
+	],
+	"subPackages":[{
+		"root": "pages/test",
+		"pages": [{
+			"path": "about",
+			"style": {
+				"navigationBarTitleText": "测试"
+			}
+		}]
+	}],
+	"wxResource":{
+		"pages": [
+			"nativePage/index"
+		],
+		"subPackages":[{
+			"root": "pages/test",
+			"pages": ["index"]
+		}]
+	}
+}

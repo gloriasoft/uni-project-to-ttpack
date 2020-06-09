@@ -1,0 +1,4 @@
+<view style="text-align:center">
+    原生头条小程序页面
+</view>
+<image src="/tt-logo.png" mode="aspectFit" style="width:100%;"/>
