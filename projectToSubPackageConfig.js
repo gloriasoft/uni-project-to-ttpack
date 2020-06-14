@@ -1,4 +1,7 @@
+// 此配置已经开启全部混写状态，可以将原生的代码也发布成微信和头条，如使用到实际项目中，建议先关闭混写插件
 module.exports={
+    // 微信原生小程序目录
+    mainWeixinMpPath: 'mainToutiaoMp',
     // 头条原生小程序目录
     mainToutiaoMpPath: 'mainToutiaoMp',
     // uni项目输出的分包在原生小程序中的路径
@@ -13,7 +16,7 @@ module.exports={
      * process.env.PACK_TYPE = toutiao 默认值为 'src/ttresource'
      * 也可以自行设定，通过环境变量process.env.PACK_TYPE进行动态设置
      */
-    wxResourcePath: null,
+    wxResourcePath: 'src/ttresource',
     // 原生资源目录路径别名, null代表使用默认值，默认值为 @wxResource (所有类型小程序通用)
     wxResourceAlias: null,
     // 引用原生资源的js的特殊API名称设定, null代表使用默认值，默认值为 __uniRequireWx (所有类型小程序通用)
@@ -21,5 +24,11 @@ module.exports={
     // 引用原生资源的样式文件的特殊API名称设定, null代表使用默认值，默认值为 __uniWxss (所有类型小程序通用)
     uniImportWxssApiName: null,
     // uni项目中的原生资源在pages.json中的特殊属性名称，null代表使用默认值，默认值为 wxResource (所有类型小程序通用)
-    configWxResourceKey: null
+    configWxResourceKey: null,
+    // 插件
+    plugins: [
+        'polyfillPlugin', // 对一些js方法的polyfill
+        'htmlMixinPlugin', // html混写
+        'cssMixinPlugin' // css混写
+    ]
 }
